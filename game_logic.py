@@ -62,9 +62,7 @@ def is_valid_move(board, start_pos, end_pos, turn):
     dx = abs(ex - sx)
     dy = abs(ey - sy)
 
-    # -------------------------
     # Пешка
-    # -------------------------
     if piece[1] == "p":
         direction = -1 if piece[0] == "w" else 1
         start_row = 6 if piece[0] == "w" else 1
@@ -98,33 +96,25 @@ def is_valid_move(board, start_pos, end_pos, turn):
 
         return False
 
-    # -------------------------
     # Конь
-    # -------------------------
     if piece[1] == "n":
         return (dx, dy) in ((1, 2), (2, 1))
 
-    # -------------------------
     # Ладья
-    # -------------------------
     if piece[1] == "r":
         return (
             (dx == 0 or dy == 0)
             and is_path_clear(board, start_pos, end_pos)
         )
 
-    # -------------------------
     # Слон
-    # -------------------------
     if piece[1] == "b":
         return (
             dx == dy
             and is_path_clear(board, start_pos, end_pos)
         )
 
-    # -------------------------
     # Ферзь
-    # -------------------------
     if piece[1] == "q":
         straight = dx == 0 or dy == 0
         diagonal = dx == dy
@@ -134,9 +124,7 @@ def is_valid_move(board, start_pos, end_pos, turn):
             and is_path_clear(board, start_pos, end_pos)
         )
 
-    # -------------------------
     # Король
-    # -------------------------
     if piece[1] == "k":
         return dx <= 1 and dy <= 1
 
