@@ -2,6 +2,9 @@
 
 Учебный проект шахматной игры на Python с использованием Pygame Community Edition (`pygame-ce`). Проект разделён на четыре основных Python-модуля и использует PNG-изображения шахматных фигур.
 
+<img width="799" height="798" alt="изображение" src="https://github.com/user-attachments/assets/a82dc448-6926-4172-8ab3-dce7dab29e74" />
+
+
 ## Возможности
 
 - Шахматная доска 8×8 с чередованием цветов клеток
