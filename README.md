@@ -53,7 +53,6 @@ chess/
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
-├── LICENSE.ru.md
 └── assets/
     ├── wp.png
     ├── bp.png
